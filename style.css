@@ -282,6 +282,7 @@ figure figcaption {
 
 .story-footer {
 	margin-top: 30px;
+	margin-left: 30px;
 }
 
 .story-footer .line {
@@ -295,8 +296,10 @@ figure figcaption {
 	color: rgb(44, 43, 43);
 }
 
-.video {
+.video,
+iframe {
 	grid-column: 2;
+	width: 100%;
 }
 .center-image {
 	grid-column: 2;
@@ -306,7 +309,6 @@ figure figcaption {
 	grid-column: 2;
 	display: grid;
 
-	font-size: 1rem;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr;
 }
@@ -337,24 +339,85 @@ figure figcaption {
 	justify-content: center;
 }
 
+
+
 .bottom {
 	display: grid;
+	padding: 0  75px  0 75px;
 	grid-template-columns: 3fr 1fr;
 	justify-content: center;
-	justify-items: center;
-	align-content: center;
-	align-items: center;
+	grid-gap: 20px;
+	margin: 40px;
 }
+.bottom-h3 {
+	grid-column: 1;
+	border-top: 1px black solid;
+	padding-top: 10px;
+}
+
+.bottom-novi h3 {
+	border-top: 1px black solid;
+	padding-top: 10px;
+	grid-column: 2/3;
+}
+
+.bottom-new{
+	display: none;
+}
+
+
+
 .slikice {
 	grid-column: 1;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));
+	grid-template-rows: repeat(3, 1fr);
+	align-content: center;
+	justify-items: start;
+	justify-content: center;
+
+	grid-gap: 20px;
 }
+
+.slikice img {
+	width: 100%;
+}
+
+.sli .desno{
+	float: right;
+	font-size: small;
+	color: grey;
+}
+.sli .lijevo{
+	
+	font-size: small;
+	color: grey;
+}
+
+.sli h3{
+	margin-top: 18px;
+	text-decoration: none;
+	font-size: medium;
+	
+	font-family: 'Times New Roman', Times, serif;
+}
+.sli a{
+	text-decoration: none;
+	font-weight: 400;
+	color: rgb(22, 22, 22);
+}
+
+.sli .lijevo{
+	
+}
+
 .postrani {
 	grid-column: 2;
 	display: grid;
 	grid-template-columns: 1fr;
-	align-content: center;
+	
 	justify-content: center;
-	grid-gap: 10px;
+	
 	text-decoration: none;
 }
 
@@ -362,7 +425,7 @@ figure figcaption {
 	font-family: "Times New Roman", Times, serif;
 	border-top: 1px solid rgb(207, 207, 207);
 	padding: 15px 0 15px 0;
-	margin-right: 100px;
+	
 }
 
 .postrani a {
@@ -435,7 +498,7 @@ figure figcaption {
 	}
 
 	.slika p {
-		font-size: 3vw;
+		font-size: 20px;
 		line-height: 25px;
 		padding: 5px;
 	}
@@ -445,5 +508,48 @@ figure figcaption {
 	}
 	.story-footer {
 		margin-left: 20px;
+	}
+
+	.bottom {
+	display: inline-block;
+	padding: 5px;
+	padding-top: 0;
+	}
+
+	.slikice {
+		grid-column: 1;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		/* align-content: center;
+		justify-items: center;
+		justify-content: center; */
+	
+		grid-gap: 20px;
+	}
+
+	.last {
+		display: none;
+		
+	}
+	.bottom-h3 {
+		grid-column: 1;
+		border-top: 1px black solid;
+		padding: 50px;
+		text-align: center;
+	}
+	
+	.bottom-novi h3 {
+		display: none;
+	}
+
+	.bottom-new{
+		display: table;
+		grid-column: -1;
+		text-align: center;
+	}
+
+	.podstrani{
+		padding: 15px;
 	}
 }
