@@ -613,4 +613,22 @@ iframe {
 	.podstrani{
 		padding: 15px;
 	}
+	.fot-lis li{
+		display: none;	
+	}
+	.fot-lis{
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 0;
+	
+		
+	}
+	.fot-lis h4{
+		border-top: 1px solid rgb(180, 177, 177);
+	}
+	.hor{
+		display: inline-block;
+		line-height: 20px;
+		margin-top: 10px;
+	}
 }
