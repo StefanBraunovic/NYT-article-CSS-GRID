@@ -152,6 +152,8 @@ h3 {
 
 .subscribe a {
 	text-decoration: none;
+	color: rgb(85, 85, 252);
+	font-size: large;
 }
 
 .vertical-line {
