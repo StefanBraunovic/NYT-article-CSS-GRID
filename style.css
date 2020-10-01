@@ -407,9 +407,7 @@ iframe {
 	color: rgb(22, 22, 22);
 }
 
-.sli .lijevo{
-	
-}
+
 
 .postrani {
 	grid-column: 2;
@@ -434,6 +432,69 @@ iframe {
 	color: black;
 	font-weight: 500;
 }
+
+.footer{
+	margin: 20px;
+}
+
+.linija{
+	background-color: #fff;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 2px solid #e2e2e2;
+    content: '';
+    display: block;
+    height: 1px;
+	margin-top: 0;
+	
+}
+
+.hed-fot{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	justify-content: space-evenly;
+	padding: 10px;
+
+}
+.hed-fot a{
+	text-align: right;
+
+}
+
+.fot-lis{
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	padding: 0 50px 7px 50px;
+	grid-gap: 10px;
+	line-height: 25px;
+	
+}
+.fot-lis li,a{
+	text-decoration:none;
+	list-style-type: none;
+	color: black;
+}
+
+.hor{
+	display: grid;
+	grid-template-columns: repeat(13,1fr) ;
+	margin: 0 100px 0 100px;
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+	justify-content: center;
+}
+.hor li,a{
+	text-decoration: none;
+	list-style: none;
+	font-size: small;
+	
+}
+/* .je{
+	grid-column: 1/span 3;
+	width: 2fr;
+
+} */
+
 
 @media only screen and (max-width: 800px) {
 	.menu {
